@@ -1,0 +1,95 @@
+<!-- Desafio 2-1: Primeiro HTML
+“Sua única limitação é você mesmo!”
+
+Sobre o desafio
+Criar um arquivo html que contenha um favicon e um header com 3 links: Comunidade, Email e Telefone.
+
+Favicon
+O favicon é o ícone que aparece na aba do navegador. O arquivo está disponível com o nome favicon.ico. Para utilizá-lo é necessário importá-lo com a tag link no html. ser dada a dica de utilizar a tag link na head do html.
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+Links
+Comunidade: Link que deve apontar para o convite da comunidade aberta da rocketseat (https://discordapp.com/invite/gCRAFhc)
+
+Email: Link que deve chamar o comando de enviar email para o destinatário oi@rocketseat.com.br. Dica: utilize o comando mailto dentro do href;
+
+Telefone: Link que deve chamar o comando de realizar uma ligação para o número +5547992078767. Dica: utilize o comando tel dentro do href;
+
+Estilização
+Você tem liberdade para escolher a estilização que preferir para esse desafio, mas alguns pontos são obrigatórios:
+
+Deve ser aplicado um background
+Deve ser utilizada a fonte Roboto
+O header precisa ocupar todo o espaço lateral e superior (body sem margin)
+O header precisa ter um espaçamento interno de 30px em todas as direções
+Os links devem ter um espaçamento de 30px entre si -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico"
+        type="image/x-icon" />
+    <title>Desafio 2-1</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header_menu">
+        <div class="links">
+            <a href="/">
+                <img src="https://t2.tudocdn.net/572277?w=646&h=284" alt="logo rocketseat">
+            </a>
+            <ul class="menu">
+                <li><a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a></li>
+                <li><a href="tel:+5547992078767">Telefone</a></li>
+                <li><a href="mailto: oi@rocketseat.com.br">E-mail</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <section class="content">
+        <div class="grid-layout">
+            <div class="image">
+                <img src="https://rocketseat.gallerycdn.vsassets.io/extensions/rocketseat/rocketseatreactjs/3.0.2/1588456824702/Microsoft.VisualStudio.Services.Icons.Default"
+                    alt="Logo rocketseat">
+            </div>
+            <div class="description">
+                <h1>
+                    Rocketseat
+                </h1>
+                <p>Seu ecossistema para aprender e evoluir na programação.</p>
+            </div>
+            <div class="tecnologies">
+                <h2>
+                    Venha aprender conosco:
+                </h2>
+                <ul>
+                    <li>ReactJS</li>
+                    <li>NodeJS</li>
+                    <li>Elixir</li>
+                    <li>React Native</li>
+                    <li>Flutter</li>
+                </ul>
+            </div>
+
+        </div>
+        <footer class="social_media">
+            <div>
+                <ul>
+                    <li><a href="https://twitter.com/rocketseat?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            target="_blank">Twitter</a>
+                    </li>
+                    <li><a href="https://pt-br.facebook.com/rocketseat/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br" target="_blank">Instagram</a>
+                    </li>
+                    <li><a href="https://github.com/rocketseat-education" target="_blank">Github</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>
